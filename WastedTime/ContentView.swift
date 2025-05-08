@@ -9,8 +9,9 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-                @State private var counter: Int = 0
-            @State private var timer: Timer?
+    @State private var counter: Int = 0
+    @State private var timer: Timer?
+    
     var body: some View {
         VStack {
             Text("Wasted Time")
@@ -66,20 +67,19 @@ struct ContentView: View {
     }
 
     private func startTimer() {
-                timer?.invalidate()
-                timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-                    counter += 1
-                }
-                UIApplication.shared.isIdleTimerDisabled = true
-            }
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            counter += 1
+        }
+        UIApplication.shared.isIdleTimerDisabled = true
+    }
 
-            private func stopTimer() {
-                timer?.invalidate()
-                timer = nil
-            }
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
 }
 
 #Preview {
     ContentView()
 }
-

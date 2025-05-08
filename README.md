@@ -1,6 +1,6 @@
 # WastedTime
 
-<img src="WastedTime/Assets.xcassets/AppIcon.appiconset/WastedTimeIcon.png" alt="AppBrowser Icon" width="200px">
+<img src="WastedTime/Assets.xcassets/AppIcon.appiconset/WastedTimeIcon.png" alt="WastedTime Icon" width="200px">
 
 ## Purpose
 
@@ -31,6 +31,10 @@ The purpose of this project is to track the time spent waiting for Xcode builds 
 ## Usage
 
 Run the application to start tracking your Xcode build times and keep your screen active.
+
+## Preview
+
+<img src="screenshot.png" alt="WastedTime screen" width="300px">
 
 ## Contributing
 
